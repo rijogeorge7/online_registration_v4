@@ -16,11 +16,11 @@
             <legend>contact information</legend>
             <form action="" method="get">
                 <label for="full_name">Full Name</label>
-                <input type="text" id="full_name" name="fullName" value="fullName">
+                <input type="text" id="full_name" name="fullName" value="fullName" placeholder="required">
                 <label for="email_address">Email Address</label>
-                <input type="email" id="email_address" name="emailAddress" value="emailAddress">
+                <input type="email" id="email_address" name="emailAddress" value="emailAddress" placeholder="required">
                 <label for="phone_number">phone number</label>
-                <input type="phone" id="phone_number" name="phoneNumber" value="phoneNumber">
+                <input type="telephone" id="phone_number" name="phoneNumber" value="phoneNumber">
                 <label for="street_address">street address</label>
                 <input type="text" id="street_address" name="streetAddress" value="streetAddress">
                 <label for="city">city</label>
@@ -34,27 +34,23 @@
                 <label for="zip_code">zip code</label>
                 <input type="number" id="zip_code" name="zipCode" value="zipCode">
         </fieldset>
-            <h2>newsletter</h2>
-            <fieldset>
-            <legend>select the newsletters you would like to receive</legend>
-            <input type="checkbox" id="html_news" name="htmlNews" checked>
-            <label for="html_news">HTML News</label>
-            <input type="checkbox" id="css_news" name="cssNews">
-            <label for="css_news">CSS News</label>
-            <input type="checkbox" id="javascript_news" name="javascriptNews">
-            <label for="javascript_news">Javascript News</label>
-        </fieldset>
         <fieldset>
-            <legend>newsletter format</legend>
-            <input type="radio" id="html" name="html" value="html">
+            <legend>newsletter</legend>
+            <p>select the newsletters you would like to receive</p>
+            <input type="checkbox" id="html_news" name="htmlNews" value="htmlChecked" checked>
+            <label for="html_news">HTML News</label>
+            <input type="checkbox" id="css_news" name="cssNews"  value="cssChecked">
+            <label for="css_news">CSS News</label>
+            <input type="checkbox" id="javascript_news" name="javascriptNews"  value="javascriptChecked">
+            <label for="javascript_news">Javascript News</label>
+            <p>newsletter format</p>
+            <input type="radio" id="html" name="radio_html" value="html">
             <label for="html">HTML</label>
-            <input type="radio" id="plain_text" name="plainText" value="plainText">
+            <input type="radio" id="plain_text" name="radio_plainText" value="plainText">
             <label for="plain_text">Plain Text</label>
         </fieldset>
-        <fieldset>
-            <legend>Other topics you'd like to hear about</legend>
-            <textarea></textarea>>
-            </fieldset>
+            <label for="other_textarea">Other topics you'd like to hear about</label>
+            <textarea id="other_textarea" name="otherTextarea"></textarea>>
             <input type="submit" value="Sign Up">
         </form>
 
