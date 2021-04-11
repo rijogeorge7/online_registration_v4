@@ -1,5 +1,70 @@
-header {
+* {
+    font-family: 'Merriweather', serif;
+    color: #617383;
+    margin-bottom: 3px;
+}
+header {   
     background-color: #2D3945;
+    margin: 0;
     padding: 10px;
     text-align: center;
+}
+h1{
+    color: white;
+    text-transform: uppercase;
+    margin: auto;
+    font-weight: 900;
+}
+h2 {
+    color: #2D3945;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+legend {
+    color:#2D3945;
+    font-weight: 700;
+}
+.contact_info input {
+    min-height: 40px;
+}
+
+label {
+    align-self: flex-start;
+}
+input:focus {
+    border: 1px solid black;
+}
+
+input[type="submit"] {
+    background-color: #4EBBB5;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 15px;
+}
+textarea {
+    height:75px;
+}
+
+footer{
+    text-align: center;
+}
+
+.top {
+    border-bottom: 2px double black;
+    text-align: center;
+}
+.contact_info {
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    margin-bottom: 20px;
 }
