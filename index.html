@@ -2,19 +2,21 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <header>
     <h1> the code review</h1>
 </header>
 <body>
-    <section>
-        <h2>signup for our newsletter</h2>
+    <section class="top">
+        <h2>Signup for our newsletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox</p>
     </section>
     <section>
-        <fieldset>
-            <legend>contact information</legend>
-            <form action="" method="get">
+        <form action="#" method="get">
+            <fieldset class="contact_info">
+                <legend>contact information</legend>
                 <label for="full_name">Full Name</label>
                 <input type="text" id="full_name" name="fullName" value="fullName" placeholder="required">
                 <label for="email_address">Email Address</label>
@@ -26,31 +28,41 @@
                 <label for="city">city</label>
                 <input type="text" id="city" name="city" value="city">
                 <label for="state">state</label>
-                <select id="state" name="state">
+                <select id="state" name="state">`
                     <option value="">Choose State</option>
                     <option value="California">California</option>
                     <option value="new york">New York</option>
                 </select>
                 <label for="zip_code">zip code</label>
                 <input type="number" id="zip_code" name="zipCode" value="zipCode">
-        </fieldset>
-        <fieldset>
-            <legend>newsletter</legend>
-            <p>select the newsletters you would like to receive</p>
-            <input type="checkbox" id="html_news" name="htmlNews" value="htmlChecked" checked>
-            <label for="html_news">HTML News</label>
-            <input type="checkbox" id="css_news" name="cssNews"  value="cssChecked">
-            <label for="css_news">CSS News</label>
-            <input type="checkbox" id="javascript_news" name="javascriptNews"  value="javascriptChecked">
-            <label for="javascript_news">Javascript News</label>
-            <p>newsletter format</p>
-            <input type="radio" id="html" name="radio_html" value="html">
-            <label for="html">HTML</label>
-            <input type="radio" id="plain_text" name="radio_plainText" value="plainText">
-            <label for="plain_text">Plain Text</label>
-        </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>newsletter</legend>
+                <p>select the newsletters you would like to receive</p>
+                <div>
+                    <input type="checkbox" id="html_news" name="htmlNews" value="htmlChecked" checked>
+                    <label for="html_news">HTML News</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="css_news" name="cssNews"  value="cssChecked">
+                    <label for="css_news">CSS News</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="javascript_news" name="javascriptNews"  value="javascriptChecked">
+                    <label for="javascript_news">Javascript News</label>
+                </div>
+                <p>newsletter format</p>
+                <div>
+                    <input type="radio" id="html" name="radio_html" value="html">
+                    <label for="html">HTML</label>
+                </div>
+                <div>
+                    <input type="radio" id="plain_text" name="radio_plainText" value="plainText">
+                    <label for="plain_text">Plain Text</label>
+                </div>
+            </fieldset>
             <label for="other_textarea">Other topics you'd like to hear about</label>
-            <textarea id="other_textarea" name="otherTextarea"></textarea>>
+            <textarea id="other_textarea" name="otherTextarea"></textarea>
             <input type="submit" value="Sign Up">
         </form>
 
