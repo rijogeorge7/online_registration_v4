@@ -52,7 +52,11 @@ input[type="submit"] {
     font-size: 1.2rem;
     font-weight: 600;
     padding: 15px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
 }
+
 textarea {
     height:75px;
 }
@@ -64,12 +68,20 @@ footer{
 input {
     transition-property: background-color;
     transition-duration: 1s;
+    height: 30px;
+}
+
+input[type=number] {
+    width: 50%;
+}
+
+select {
+    height: 40px;
 }
 
 .top {
     border-bottom: 2px solid black;
     text-align: center;
-    line-height: 0.5rem;
     padding-bottom: 25px;
     border-bottom: 2px solid black;
 }
@@ -100,6 +112,11 @@ input {
     label {
         margin: 3px;
     }
+    input[type=number] {
+        width: 25% !important ;
+        margin-right: 257px;
+    }
+
     .contact_field {
         display: flex;
         flex-direction: row;
